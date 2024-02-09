@@ -1,9 +1,43 @@
-[gd_scene format=3 uid="uid://dy6qc32pwixix"]
+[gd_scene load_steps=3 format=3 uid="uid://dy6qc32pwixix"]
+
+[ext_resource type="Theme" uid="uid://cv6q65hyl8uoh" path="res://launcher/theme.tres" id="1_r037i"]
+[ext_resource type="Script" path="res://launcher/MainScript.cs" id="2_iewao"]
 
 [node name="root" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_r037i")
+script = ExtResource("2_iewao")
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.004
+offset_bottom = 2.05199
+theme = ExtResource("1_r037i")
+alignment = 1
+
+[node name="LabelMargins" type="MarginContainer" parent="Container"]
+layout_mode = 2
+theme = ExtResource("1_r037i")
+
+[node name="ProcessLabel" type="Label" parent="Container/LabelMargins"]
+layout_mode = 2
+theme = ExtResource("1_r037i")
+text = "Current Process Label"
+horizontal_alignment = 1
+
+[node name="BarMargins" type="MarginContainer" parent="Container"]
+layout_mode = 2
+theme = ExtResource("1_r037i")
+
+[node name="ProcessBar" type="ProgressBar" parent="Container/BarMargins"]
+layout_mode = 2
+theme = ExtResource("1_r037i")
+rounded = true

@@ -1,0 +1,54 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cv6q65hyl8uoh"]
+
+[sub_resource type="SystemFont" id="SystemFont_rw20r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ffww"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhe3b"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oft01"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[resource]
+default_font = SubResource("SystemFont_rw20r")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 32
+Label/fonts/font = SubResource("SystemFont_rw20r")
+Label/styles/normal = SubResource("StyleBoxEmpty_3ffww")
+MarginContainer/constants/margin_bottom = 15
+MarginContainer/constants/margin_left = 15
+MarginContainer/constants/margin_right = 15
+MarginContainer/constants/margin_top = 15
+ProgressBar/colors/font_color = Color(0.95, 0.95, 0.95, 1)
+ProgressBar/colors/font_outline_color = Color(1, 1, 1, 1)
+ProgressBar/constants/outline_size = 0
+ProgressBar/font_sizes/font_size = 32
+ProgressBar/fonts/font = SubResource("SystemFont_rw20r")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_nhe3b")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_oft01")
